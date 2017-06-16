@@ -8,4 +8,4 @@ function truncate(phrase, length) {
   }
 }
 
-console.log(truncate($phrase, 4))
+console.log(truncate($phrase, 5))
