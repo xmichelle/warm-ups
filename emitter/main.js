@@ -1,5 +1,5 @@
 
-class Emitter = {
+class Emitter {
   constructor() {
     this.subscribers = []
   }
