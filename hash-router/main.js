@@ -1,4 +1,3 @@
-
 class HashRouter {
   constructor() {
     this.isListening = false
