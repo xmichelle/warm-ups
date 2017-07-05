@@ -1,13 +1,15 @@
-// 
-// class HashRouter {
-//   constructor() {
-//     this.isListening = false
-//   }
-//   listen() {
-//     if (isListening === true) {
-//
-//     }
-//   }
-// }
-//
-// console.log(window.location.hash)
+
+class HashRouter {
+  constructor() {
+    this.isListening = false
+  }
+  listen() {
+    if (this.isListening) {
+      return
+    }
+    window.addEventListener('hashchange', () => {
+      console.log(window.location.hash)
+    })
+    this.isListening = true
+  }
+}
