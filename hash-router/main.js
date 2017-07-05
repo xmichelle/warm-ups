@@ -13,3 +13,7 @@ class HashRouter {
     this.isListening = true
   }
 }
+
+const hashRouter = new HashRouter()
+
+hashRouter.listen()
