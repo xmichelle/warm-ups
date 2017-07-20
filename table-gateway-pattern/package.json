@@ -1,0 +1,15 @@
+{
+  "name": "table-gateway-pattern",
+  "version": "1.0.0",
+  "description": "Table Gateway Pattern Exercise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "michelle",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.13.0",
+    "pg": "^7.0.1"
+  }
+}
