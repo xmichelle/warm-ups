@@ -12,3 +12,9 @@ function onesComplement(n) {
   const stringifyNumbers = numbers.join('')
   return stringifyNumbers
 }
+
+// Another solution using a ternary operator
+
+function onesComplement2(n) {
+  return n.split('').map(number => number === '0' ? '1' : '0').join('')
+}
