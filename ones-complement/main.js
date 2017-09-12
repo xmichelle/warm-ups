@@ -18,3 +18,9 @@ function onesComplement(n) {
 function onesComplement2(n) {
   return n.split('').map(number => number === '0' ? '1' : '0').join('')
 }
+
+// Another solution using the spread method
+
+function onesComplement3(n) {
+  return [...n].map(number => number === '0' ? '1' : '0').join('')
+}
