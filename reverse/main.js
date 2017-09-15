@@ -9,3 +9,9 @@ function solution(str) {
 
   return backwardArray.join('')
 }
+
+// Another solution without using a for loop
+
+function solution2(str) {
+  return str.split('').reverse().join('')
+}
