@@ -28,3 +28,17 @@ function kookaCounter2(laughing) {
   })
   return count
 }
+
+// Another method using the split method
+
+function kookaCounter3(laughing) {
+  const laughingArray = laughing.split('a')
+  let count = 0
+
+  for (let i = 0; i < laughingArray.length; i++) {
+    if (laughingArray[i] !== laughingArray[i + 1]) {
+      count++
+    }
+  }
+  return count - 1
+}
