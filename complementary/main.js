@@ -25,3 +25,9 @@ function dnaStrand2(dna) {
 
   return dna.split('').map(v => pairs[v]).join('')
 }
+
+// Another way that uses the ternary operator
+
+function dnaStrand3(dna) {
+  return dna.split('').map(base => base === 'A' ? 'T' : base === 'T' ? 'A' : base === 'G' ? 'C' : 'G').join('')
+}
