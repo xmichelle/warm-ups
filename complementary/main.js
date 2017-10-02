@@ -17,3 +17,11 @@ function dnaStrand(dna) {
   }
   return dnaArray.join('')
 }
+
+// Another way that uses the map method
+
+function dnaStrand2(dna) {
+  const pairs = { 'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C' }
+
+  return dna.split('').map(v => pairs[v]).join('')
+}
