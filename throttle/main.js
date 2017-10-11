@@ -4,10 +4,13 @@ function throttle(func, wait) {
     if (!waiting) {
       func.call()
       waiting = true
-      setTimeOut(() => {
+      setTimeout(() => {
         waiting = false
       }, wait)
     }
+    // else {
+    //   console.log('Need to wait...')
+    // }
   }
 }
 
