@@ -8,9 +8,9 @@ function throttle(func, wait) {
         waiting = false
       }, wait)
     }
-    // else {
-    //   console.log('Need to wait...')
-    // }
+    else {
+      console.log('Need to wait...')
+    }
   }
 }
 
