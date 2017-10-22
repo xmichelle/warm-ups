@@ -29,3 +29,17 @@ function factorial2(n) {
   }
   return n
 }
+
+// Another way using recursion
+
+function factorial3(n) {
+  if (n === 0 || n === 1) {
+    return 1
+  }
+  else if (n < 1) {
+    return 'Invalid value'
+  }
+  else {
+    return (n * factorial3(n - 1))
+  }
+}
