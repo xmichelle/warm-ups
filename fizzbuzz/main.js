@@ -38,4 +38,4 @@ function fizzbuzz2(nums) {
   }
 }
 
-fizzbuzz2(100)
+// fizzbuzz2(100)
