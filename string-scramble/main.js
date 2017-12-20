@@ -6,3 +6,15 @@ function scramble(str, arr) {
   }
   return scrambledStr.join('')
 }
+
+// Another way to write the function
+
+function scramble2(str, arr) {
+  let scrambled = []
+
+  arr.map((position, i) => {
+    scrambled[position] = str[i]
+  })
+
+  return scrambled.join('')
+}
