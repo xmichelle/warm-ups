@@ -2,12 +2,7 @@ function incrementer(nums) {
   let incremented = []
 
   for (let i = 0; i < nums.length; i++) {
-    if ((nums[i] + (i + 1)) >= 10) {
-      incremented.push((nums[i] + (i + 1)) % 10)
-    }
-    else {
-      incremented.push(nums[i] + (i + 1))
-    }
+    incremented.push((nums[i] + i + 1) % 10)
   }
   return incremented
 }
