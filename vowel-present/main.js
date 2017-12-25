@@ -9,3 +9,12 @@ function checkVowel(str, position) {
     return false
   }
 }
+
+// Another way using the includes method
+
+function checkVowel2(str, position) {
+  const lowerCase = str.toLowerCase()
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+
+  return vowels.includes(lowerCase.charAt(position))
+}
