@@ -7,3 +7,11 @@ function firstDuplicate(nums) {
     }
   }
 }
+
+// Another way using the find method
+
+function firstDuplicate2(nums) {
+  return nums.find((num, i) => {
+    return nums.indexOf(num) !== i
+  })
+}
