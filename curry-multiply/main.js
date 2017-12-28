@@ -6,3 +6,9 @@ function multiplyAll(nums) {
     return multiplied
   }
 }
+
+// A cleaner way to write the function
+
+function multiplyAll2(nums) {
+  return multiplier => nums.map(num => num * multiplier)
+}
