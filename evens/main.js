@@ -9,3 +9,10 @@ function evenNumbers(array, number) {
 
   return lastEvens.reverse()
 }
+
+// Another way using the filter method
+
+function evenNumbers2(array, number) {
+  const filteredEvens = array.filter(num => num % 2 === 0)
+  return filteredEvens.slice(-number)
+}
