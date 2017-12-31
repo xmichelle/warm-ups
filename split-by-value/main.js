@@ -25,3 +25,12 @@ function splitByValue2(k, nums) {
 
   return lesser.concat(greater)
 }
+
+// Another way using the filter method
+
+function splitByValue3(k, nums) {
+  const greater = nums.filter(num => num >= k)
+  const lesser = nums.filter(num => num < k)
+
+  return [...lesser, ...greater]
+}
