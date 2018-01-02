@@ -17,3 +17,12 @@ function averageLength(arr) {
 
   return result
 }
+
+// Another way to write the function
+
+function averageLength2(arr) {
+  const avg = Math.round(arr.join('').length / arr.length)
+  const result = arr.map(str => str[0].repeat(avg))
+
+  return result
+}
