@@ -1,8 +1,22 @@
-function pairs (arr) {
+function pairs(arr) {
   let count = 0
 
   for (let i = 0; i < arr.length; i += 2) {
     if ( (Math.abs(arr[i] - arr[i + 1]) === 1) ) {
+      count++
+    }
+  }
+
+  return count
+}
+
+// Another way to write the function
+
+function pairs2(arr) {
+  let count = 0
+
+  for (let i = 0; i < arr.length; i += 2) {
+    if ((arr[i] - 1) === arr[i + 1] || (arr[i] + 1) === arr[i + 1]) {
       count++
     }
   }
